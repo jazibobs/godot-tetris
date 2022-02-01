@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Control",
+"class": "ShapeData",
+"language": "GDScript",
+"path": "res://Scripts/ShapeData.gd"
+} ]
+_global_script_class_icons={
+"ShapeData": ""
+}
+
+[application]
+
+config/name="Tetris"
+run/main_scene="res://Scenes/GUI.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Blocks="*res://Scenes/Blocks.tscn"
+
+[display]
+
+window/size/width=700
+window/size/height=800
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

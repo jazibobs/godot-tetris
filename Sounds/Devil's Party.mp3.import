@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Devil's Party.mp3-7daacb38172fee593ae948fb1d42d0e2.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Devil's Party.mp3"
+dest_files=[ "res://.import/Devil's Party.mp3-7daacb38172fee593ae948fb1d42d0e2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

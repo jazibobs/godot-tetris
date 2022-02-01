@@ -1,0 +1,278 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/white.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/GUI.gd" type="Script" id=3]
+
+[node name="Control" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GUI" type="PanelContainer" parent="."]
+pause_mode = 2
+margin_left = 225.0
+margin_top = 200.0
+margin_right = 475.0
+margin_bottom = 600.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 243.0
+margin_bottom = 393.0
+
+[node name="Left" type="CenterContainer" parent="GUI/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 386.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="VBox" type="VBoxContainer" parent="GUI/HBoxContainer/Left"]
+margin_left = 41.0
+margin_right = 159.0
+margin_bottom = 386.0
+
+[node name="Stats" type="GridContainer" parent="GUI/HBoxContainer/Left/VBox"]
+margin_right = 118.0
+margin_bottom = 116.0
+custom_constants/vseparation = 20
+custom_constants/hseparation = 10
+columns = 2
+
+[node name="HighScore" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_right = 68.0
+margin_bottom = 14.0
+text = "High Score"
+
+[node name="HighScoreVal" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_left = 78.0
+margin_right = 118.0
+margin_bottom = 14.0
+text = "00000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_top = 34.0
+margin_right = 68.0
+margin_bottom = 48.0
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelVal" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_left = 78.0
+margin_top = 34.0
+margin_right = 118.0
+margin_bottom = 48.0
+text = "00000"
+
+[node name="Score" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_top = 68.0
+margin_right = 68.0
+margin_bottom = 82.0
+text = "Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreVal" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_left = 78.0
+margin_top = 68.0
+margin_right = 118.0
+margin_bottom = 82.0
+text = "00000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lines" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_top = 102.0
+margin_right = 68.0
+margin_bottom = 116.0
+text = "Lines"
+
+[node name="LinesVal" type="Label" parent="GUI/HBoxContainer/Left/VBox/Stats"]
+margin_left = 78.0
+margin_top = 102.0
+margin_right = 118.0
+margin_bottom = 116.0
+text = "00000"
+
+[node name="MarginContainer" type="MarginContainer" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 120.0
+margin_right = 118.0
+margin_bottom = 274.0
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="CenterContainer" type="CenterContainer" parent="GUI/HBoxContainer/Left/VBox/MarginContainer"]
+margin_top = 10.0
+margin_right = 118.0
+margin_bottom = 144.0
+
+[node name="NextShape" type="GridContainer" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer"]
+margin_left = 26.0
+margin_right = 92.0
+margin_bottom = 134.0
+custom_constants/vseparation = 2
+custom_constants/hseparation = 2
+columns = 2
+
+[node name="Cell" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 2 )
+
+[node name="Cell2" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_left = 34.0
+margin_right = 66.0
+margin_bottom = 32.0
+texture = ExtResource( 2 )
+
+[node name="Cell3" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_top = 34.0
+margin_right = 32.0
+margin_bottom = 66.0
+texture = ExtResource( 2 )
+
+[node name="Cell4" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_left = 34.0
+margin_top = 34.0
+margin_right = 66.0
+margin_bottom = 66.0
+texture = ExtResource( 2 )
+
+[node name="Cell5" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_top = 68.0
+margin_right = 32.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+
+[node name="Cell6" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_left = 34.0
+margin_top = 68.0
+margin_right = 66.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+
+[node name="Cell7" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_top = 102.0
+margin_right = 32.0
+margin_bottom = 134.0
+texture = ExtResource( 2 )
+
+[node name="Cell8" type="TextureRect" parent="GUI/HBoxContainer/Left/VBox/MarginContainer/CenterContainer/NextShape"]
+margin_left = 34.0
+margin_top = 102.0
+margin_right = 66.0
+margin_bottom = 134.0
+texture = ExtResource( 2 )
+
+[node name="NewGameBtn" type="Button" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 278.0
+margin_right = 118.0
+margin_bottom = 298.0
+text = "New Game"
+
+[node name="PauseBtn" type="Button" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 302.0
+margin_right = 118.0
+margin_bottom = 322.0
+text = "Pause"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 326.0
+margin_right = 118.0
+margin_bottom = 342.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="Label" parent="GUI/HBoxContainer/Left/VBox/HBoxContainer"]
+margin_top = 1.0
+margin_right = 38.0
+margin_bottom = 15.0
+text = "Music"
+
+[node name="MusicBtn" type="HSlider" parent="GUI/HBoxContainer/Left/VBox/HBoxContainer"]
+margin_left = 42.0
+margin_right = 118.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = -1.0
+value = -1.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 346.0
+margin_right = 118.0
+margin_bottom = 362.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sound" type="Label" parent="GUI/HBoxContainer/Left/VBox/HBoxContainer2"]
+margin_top = 1.0
+margin_right = 39.0
+margin_bottom = 15.0
+text = "Sound"
+
+[node name="SfxBtn" type="HSlider" parent="GUI/HBoxContainer/Left/VBox/HBoxContainer2"]
+margin_left = 43.0
+margin_right = 118.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+min_value = -24.0
+max_value = -1.0
+value = -1.0
+
+[node name="AboutBtn" type="Button" parent="GUI/HBoxContainer/Left/VBox"]
+margin_top = 366.0
+margin_right = 118.0
+margin_bottom = 386.0
+text = "About"
+
+[node name="Right" type="MarginContainer" parent="GUI/HBoxContainer"]
+margin_left = 204.0
+margin_right = 236.0
+margin_bottom = 386.0
+
+[node name="ColorRect" type="ColorRect" parent="GUI/HBoxContainer/Right"]
+margin_right = 32.0
+margin_bottom = 386.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Grid" type="GridContainer" parent="GUI/HBoxContainer/Right"]
+margin_right = 32.0
+margin_bottom = 386.0
+custom_constants/vseparation = 2
+custom_constants/hseparation = 2
+columns = 10
+
+[node name="TextureRect" type="TextureRect" parent="GUI/HBoxContainer/Right/Grid"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 2 )
+
+[node name="AboutBox" type="AcceptDialog" parent="GUI"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 394.0
+margin_bottom = 377.0
+window_title = "About"
+dialog_text = "Created by Jared Rigby 2022 using the Godot Game Engine"
+
+[connection signal="button_down" from="GUI/HBoxContainer/Left/VBox/NewGameBtn" to="GUI" method="_on_NewGameBtn_button_down"]
+[connection signal="button_down" from="GUI/HBoxContainer/Left/VBox/PauseBtn" to="GUI" method="_on_PauseBtn_button_down"]
+[connection signal="value_changed" from="GUI/HBoxContainer/Left/VBox/HBoxContainer/MusicBtn" to="GUI" method="_on_MusicBtn_value_changed"]
+[connection signal="value_changed" from="GUI/HBoxContainer/Left/VBox/HBoxContainer2/SfxBtn" to="GUI" method="_on_SfxBtn_value_changed"]
+[connection signal="button_down" from="GUI/HBoxContainer/Left/VBox/AboutBtn" to="GUI" method="_on_AboutBtn_button_down"]
+[connection signal="popup_hide" from="GUI/AboutBox" to="GUI" method="_on_AboutBox_popup_hide"]
